@@ -1,0 +1,68 @@
+.section {
+    @include container;
+    aspect-ratio: 2 / 1;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & picture {
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .webp & {
+        background-image: image-set(
+            '../section/nophoto-100.webp' 1x,
+            '../section/nophoto-100@2x.webp' 2x,
+            '../section/nophoto-100@3x.webp' 3x
+            );
+    
+            @media (min-width: $md-width) {
+                background-image: image-set(
+                '../section/nophoto-250.webp' 1x,
+                '../section/nophoto-250@2x.webp' 2x,
+                '../section/nophoto-250@3x.webp' 3x
+                );
+            }
+    
+            @media (min-width: $xl-width) {
+                background-image: image-set(
+                '../section/nophoto-500.webp' 1x,
+                '../section/nophoto-500@2x.webp' 2x,
+                '../section/nophoto-500@3x.webp' 3x
+                );
+            }
+    }
+
+    .no-webp & {
+        background-image: image-set(
+        '../section/nophoto-100.png' 1x,
+        '../section/nophoto-100@2x.png' 2x,
+        '../section/nophoto-100@3x.png' 3x
+        );
+
+        @media (min-width: $md-width) {
+            background-image: image-set(
+            '../section/nophoto-250.png' 1x,
+            '../section/nophoto-250@2x.png' 2x,
+            '../section/nophoto-250@3x.png' 3x
+            );
+        }
+
+        @media (min-width: $xl-width) {
+            background-image: image-set(
+            '../section/nophoto-500.png' 1x,
+            '../section/nophoto-500@2x.png' 2x,
+            '../section/nophoto-500@3x.png' 3x
+            );
+        }
+    }
+}
