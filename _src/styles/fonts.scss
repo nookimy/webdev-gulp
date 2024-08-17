@@ -13,6 +13,16 @@
 	font-display: swap;
 	src:
 		local("TildaSans"),
+		url("./src/fonts/TildaSans-Bold.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TildaSans";
+	font-display: swap;
+	src:
+		local("TildaSans"),
 		url("./src/fonts/TildaSans-Black.woff2") format("woff2"),
 		url("./src/fonts/TildaSans-Black.woff") format("woff");
 	font-weight: 900;
@@ -33,29 +43,19 @@
 	font-display: swap;
 	src:
 		local("TildaSans"),
-		url("./src/fonts/TildaSans-Medium.woff2") format("woff2"),
-		url("./src/fonts/TildaSans-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-}
-@font-face {
-	font-family: "TildaSans";
-	font-display: swap;
-	src:
-		local("TildaSans"),
-		url("./src/fonts/TildaSans-Bold.woff2") format("woff2"),
-		url("./src/fonts/TildaSans-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: "TildaSans";
-	font-display: swap;
-	src:
-		local("TildaSans"),
 		url("./src/fonts/TildaSans-Light.woff2") format("woff2"),
 		url("./src/fonts/TildaSans-Light.woff") format("woff");
 	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TildaSans";
+	font-display: swap;
+	src:
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Medium.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Medium.woff") format("woff");
+	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
