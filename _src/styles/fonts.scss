@@ -1,250 +1,80 @@
 @font-face {
-	font-family: "Charteritcblack";
+	font-family: "CharterITC";
 	font-display: swap;
 	src:
-		local("Charteritcblack"),
-		url("./src/fonts/Charteritcblack.woff2") format("woff2"),
-		url("./src/fonts/Charteritcblack.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Black.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Black.woff") format("woff");
+		local("CharterITC"),
+		url("./src/fonts/CharterITC-Black.woff2") format("woff2"),
+		url("./src/fonts/CharterITC-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
 }
 @font-face {
-	font-family: "NotoSans";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-BlackItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-BlackItalic.woff") format("woff");
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Black.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Black.woff") format("woff");
 	font-weight: 900;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Bold.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Bold.woff") format("woff");
-	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
-	font-family: "NotoSans";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-ExtraBold.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-ExtraBold.woff") format("woff");
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-ExtraBold.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-ExtraBold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
-	font-family: "NotoSans";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-BoldItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-BoldItalic.woff") format("woff");
-	font-weight: 700;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-ExtraLightItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-ExtraLightItalic.woff") format("woff");
-	font-weight: 200;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Italic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Italic.woff") format("woff");
-	font-weight: 400;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-ExtraLight.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-ExtraLight.woff") format("woff");
-	font-weight: 200;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Light.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-ExtraBoldItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-ExtraBoldItalic.woff") format("woff");
-	font-weight: 800;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-LightItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-MediumItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-MediumItalic.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Regular.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-SemiBold.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Medium.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Medium.woff") format("woff");
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Medium.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Medium.woff") format("woff");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	font-family: "NotoSans";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-SemiBoldItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-Thin.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-Thin.woff") format("woff");
-	font-weight: 100;
-	font-style: normal;
-}
-@font-face {
-	font-family: "NotoSans";
-	font-display: swap;
-	src:
-		local("NotoSans"),
-		url("./src/fonts/NotoSans-ThinItalic.woff2") format("woff2"),
-		url("./src/fonts/NotoSans-ThinItalic.woff") format("woff");
-	font-weight: 100;
-	font-style: italic;
-}
-@font-face {
-	font-family: "Oswald";
-	font-display: swap;
-	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-ExtraLight.woff2") format("woff2"),
-		url("./src/fonts/Oswald-ExtraLight.woff") format("woff");
-	font-weight: 200;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Oswald";
-	font-display: swap;
-	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-Light.woff2") format("woff2"),
-		url("./src/fonts/Oswald-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Oswald";
-	font-display: swap;
-	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-Bold.woff2") format("woff2"),
-		url("./src/fonts/Oswald-Bold.woff") format("woff");
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Bold.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Oswald";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-Medium.woff2") format("woff2"),
-		url("./src/fonts/Oswald-Medium.woff") format("woff");
-	font-weight: 500;
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Light.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Light.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Oswald";
+	font-family: "TildaSans";
 	font-display: swap;
 	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-SemiBold.woff2") format("woff2"),
-		url("./src/fonts/Oswald-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-}
-@font-face {
-	font-family: "Oswald";
-	font-display: swap;
-	src:
-		local("Oswald"),
-		url("./src/fonts/Oswald-Regular.woff2") format("woff2"),
-		url("./src/fonts/Oswald-Regular.woff") format("woff");
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Regular.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Regular.woff") format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TildaSans";
+	font-display: swap;
+	src:
+		local("TildaSans"),
+		url("./src/fonts/TildaSans-Semibold.woff2") format("woff2"),
+		url("./src/fonts/TildaSans-Semibold.woff") format("woff");
+	font-weight: 600;
 	font-style: normal;
 }

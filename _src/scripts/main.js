@@ -12,6 +12,7 @@ testWebP(function (support) {
 });
 
 /*Модальные окна*/
+
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 const modalLinks = document.querySelectorAll('.modal-link');

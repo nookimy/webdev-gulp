@@ -311,7 +311,7 @@ function svgopt(done) {
   done();
 }
 
-function img(done) {
+function imgresponsive(done) {
   blocks.forEach (function (block) {
     const config = responsiveConfig([
         basePath.blocks + '/' + block + '/*.scss',
@@ -560,25 +560,30 @@ exports.styles = stylesScss
 exports.scripts = scripts
 exports.imgopt = imgopt
 exports.svgopt = svgopt
-exports.img = img
+exports.imgresponsive = imgresponsive
 exports.imgwebp = imgwebp
 exports.copySvg = copySvg
 exports.svgSprive = svgSprive
 exports.copyFonts = copyFonts
 exports.watch = watch
 
+// Последовательная обработка шрифтов (отдельная задача, не включена в сценарии)
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Последовательная обработка шрифтов (отдельная задача, не включена в сценарии)
-const fonts = gulp.series( otfToTtf, ttfToWoff, fontsStyle);
-
+const img = gulp.series(imgresponsive, imgwebp);
 
 // Основные задачи
-const mainTasks = gulp.parallel(stylesScss, scripts, gulp.series(img, imgwebp));
+const mainTasks = gulp.parallel(stylesScss, scripts, img);
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(clean, copyFonts, svgopt, svgSprive, copy, html, mainTasks, watch);
 
 // Таск, который выполняется по команде gulp
 exports.default = dev;
+
+// Таск, который выполняется по команде gulp fonts
 exports.fonts = fonts;
-exports.imgopt = imgopt;
+
+// Таск, который выполняется по команде gulp fonts
+exports.img = img;
