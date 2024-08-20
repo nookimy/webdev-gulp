@@ -1,0 +1,91 @@
+.btn--reset {
+    @include btn-reset;
+}
+
+.btn {
+    /* button */
+    appearance: none;
+    font: inherit;        
+    cursor: pointer;
+
+    /* link */
+    text-decoration: none;
+    text-align: center;
+
+    /* общие */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    min-width: 100px;
+    min-height: 30px;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 5px;          
+    font-size: 1.6rem;
+    padding: 0.5em 1em; 
+    color: inherit; 
+    transition: 0.3s ease-out;   
+    
+    &:disabled,
+    &[disabled],
+    &.disabled{
+        background-color: #6c7589;
+        border-color: #6c7589;
+        color: #d2d5db;        
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    & .icon {
+        display: inline-block;
+        vertical-align: middle;        
+        width: 1em;
+        height: 1em;
+    }
+
+
+    &--main,
+    &--main-icon {
+        background-color: #235ad1;
+        border-color: #235ad1;
+        color: #fff;
+
+        & .icon__symbol {
+            fill: #fff;
+        }
+
+        &:hover {
+            background-color: #1d49aa;
+            border-color: #1d49aa;
+        }
+
+        &:focus {            
+            box-shadow: 0 0 5px 4px #cbd6ee;
+        }        
+    }
+
+    &--main-icon {
+        min-width: initial;
+        text-align: center;
+        padding: 10px 14px;
+    }
+
+    &--gradient {
+        
+        background: linear-gradient(to bottom, #00acee, #0072e0);
+        background-origin: border-box;
+        color: #fff;        
+
+        &:hover {
+            background: transparent;
+            color: #1d49aa;
+            border-color: #1d49aa;
+        }
+    }
+
+
+}
